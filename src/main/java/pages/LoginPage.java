@@ -8,7 +8,6 @@ public class LoginPage extends Interactions {
         typeIn("//*[@id=\"password\"]", "secret_sauce");
         clickOn("//*[@id=\"login-button\"]");
         return driver.getCurrentUrl();
-        //gsdxgdxs
     }
     public static String errorMessage(){
         navigateTo("https://www.saucedemo.com/");
