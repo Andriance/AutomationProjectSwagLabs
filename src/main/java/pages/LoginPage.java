@@ -10,11 +10,6 @@ public class LoginPage extends Interactions {
         clickOn("//*[@id=\"login-button\"]");
         return driver.getCurrentUrl();
     }
-    public static String errorMessage(){
-        navigateTo("https://www.saucedemo.com/");
-        clickOn("//*[@id=\"login-button\"]");
-        return getText("//*[@id=\"login_button_container\"]/div/form/div[3]");
-    }
     public static String invalidUser(){
         typeIn("//*[@id=\"user-name\"]","abababa");
         clickOn("//*[@id=\"login-button\"]");
