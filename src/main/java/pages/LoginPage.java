@@ -2,6 +2,7 @@ package pages;
 
 import setUp.Interactions;
 
+// This is a test class for the login page
 public class LoginPage extends Interactions {
     public static String logMeIn(){
         typeIn("//*[@id=\"user-name\"]", "standard_user");
